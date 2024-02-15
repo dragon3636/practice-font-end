@@ -30,4 +30,14 @@ function toggle(e) {
     subMenu.forEach(item => item != this ? item.closest('.has-child').classList.remove('expand') : null);
     if (this.closest('.has-child').classList != 'expand')
         this.closest('.has-child').classList.toggle('expand');
-}    
+}
+// slider with swiper
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+});
