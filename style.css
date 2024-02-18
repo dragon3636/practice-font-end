@@ -488,7 +488,7 @@ nav .fly-item {
     flex: 1;
 }
 
-.header-main .right form {
+form {
     position: relative;
 }
 
@@ -1119,6 +1119,30 @@ d. MAIN product
 /* 05. BANNER--------------
  *a. News Letter
 *--------------------------*/
+.newsletter {
+    padding: 2.5em 0;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+
+.newsletter h3 {
+    font-size: 1.5em;
+}
+
+.newsletter p {
+    font-weight: var(--fw3);
+    color: var(--light-text-color);
+    margin: 0.5em 1.5em;
+}
+
+.newsletter p strong {
+    color: var(--primary-color);
+}
+
+.newsletter form {
+    max-width: 500px;
+    width: var(--percent100);
+}
 
 /* 05. BANNER--------------
  *b. Widgets
@@ -1354,5 +1378,12 @@ d. MAIN product
 
     .products.main .item {
         flex: 0 0 25%;
+    }
+
+    /* footer newsletter */
+    .newsletter .box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
