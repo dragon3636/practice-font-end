@@ -1147,6 +1147,10 @@ d. MAIN product
 /* 05. BANNER--------------
  *b. Widgets
 *--------------------------*/
+.widgets {
+    padding: 3.5em 2.5em;
+    background-color: var(--light-bg-color);
+}
 
 /*05. BANNER--------------
  *c. Footer Info
@@ -1376,7 +1380,8 @@ d. MAIN product
         max-width: 373px;
     }
 
-    .products.main .item {
+    .products.main .item,
+    .widgets .row {
         flex: 0 0 25%;
     }
 
