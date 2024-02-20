@@ -1286,6 +1286,58 @@ d. MAIN product
 }
 
 /*---------------
+ * 08. PAGE SINGLE
+ ----------------*/
+
+/*08. PAGE SINGLE--------------
+ *a. Breadcrumb
+*--------------------------*/
+.page-home .dpt-cat .dpt-trigger,
+.dpt-trigger .ri-close-line,
+.showdpt .dpt-trigger .ri-menu-3-line {
+    display: none;
+}
+
+.showdpt .dpt-trigger .ri-close-line {
+    display: block;
+}
+
+/*08. PAGE SINGLE--------------
+ *b. Product deail 
+*--------------------------*/
+
+/*08. PAGE SINGLE--------------
+ *c. Product description
+*--------------------------*/
+
+
+/*08. PAGE SINGLE--------------
+ *d. Product Review
+*--------------------------*/
+
+/*08. PAGE SINGLE--------------
+ *e. Product Review Form 
+*--------------------------*/
+
+/*---------------
+ * 10. PAGE CATEGORY
+ ----------------*/
+/*---------------
+ * 11. CART
+ ----------------*/
+/*---------------
+ * 12. PAGE CART
+ ----------------*/
+
+/*---------------
+ * 13. PAGE CHECKOUT
+ ----------------*/
+
+/*---------------
+ * 14. MODAL 
+ ----------------*/
+
+/*---------------
  * 15. RESPONSIVE
  ----------------*/
 
@@ -1519,5 +1571,14 @@ d. MAIN product
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    /* Page Single */
+    #page:not(.page-home) .dpt-menu {
+        display: none;
+    }
+
+    #page.showdpt .dpt-menu {
+        display: block;
     }
 }

@@ -51,3 +51,9 @@ searchButton.addEventListener('click', () => {
 tClose.addEventListener('click', () => {
     showClass.classList.remove('showsearch')
 })
+// show dpt menu
+const dptButton = document.querySelector(".dpt-cat .dpt-trigger");
+const dptClass = document.querySelector(".site");
+dptButton.addEventListener('click', () => {
+    dptClass.classList.toggle("showdpt");
+})
