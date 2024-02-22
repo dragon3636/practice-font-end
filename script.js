@@ -82,3 +82,17 @@ var productBig = new Swiper('.big-image', {
         swiper: productThumb
     }
 })
+// stock products bar width percentage
+var stocks = document.querySelectorAll(".products .stock");
+console.log("🚀 ~ stocks length:", stocks.length)
+for (let x = 0; x < stocks.length; x++) {
+    let stock = stocks[x].dataset.stock;
+    console.log("🚀 ~ stock:", stock)
+    let available = stocks[x].querySelector('.qty-available').innerHTML;
+    console.log("🚀 ~ available:", available)
+    let sold = stocks[x].querySelector(".qty-sold").innerHTML;
+    console.log("🚀 ~ sold:", sold)
+    let precent = sold * 100 / stock;
+    console.log("🚀 ~ precent:", precent)
+    stocks[x].querySelector(".avaiable").style.width = precent + '%';
+}
